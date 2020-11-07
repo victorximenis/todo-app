@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/material-design-lite/dist/material.blue-indigo.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/material-design-lite/dist/material.min.js"
+            ]
           },
           "configurations": {
             "production": {

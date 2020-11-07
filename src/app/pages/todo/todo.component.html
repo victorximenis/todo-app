@@ -1,0 +1,25 @@
+
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">
+        <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--2dp">
+            <thead>
+              <tr>
+                <th class="mdl-data-table__cell--non-numeric">Tarefa</th>
+                <th class="mdl-data-table__cell--non-numeric">Descricao</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let t of tasks">
+                <td class="mdl-data-table__cell--non-numeric">{{t.title}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{t.description}}</td>
+                <td>
+                    <button (click)="deleteTask(t.id)" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">close</i>
+                    </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
